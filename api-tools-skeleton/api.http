@@ -1,0 +1,30 @@
+GET http://localhost:8080/users
+Accept: application/xml
+
+###
+
+GET http://localhost:8080/users
+Accept: application/json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/xml
+
+{
+  "id": "1",
+  "name": "Jose Marcos",
+  "email": "jose@marcos.com"
+}
+
+###
+
+POST http://localhost:8080/users
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Jose Marcos",
+  "email": "jose@marcos.com"
+}
